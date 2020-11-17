@@ -107,6 +107,7 @@ resource "aws_key_pair" "auth" {
 }
 
 resource "aws_instance" "web" {
+  root_block_device.encrypted = true
   # The connection block tells our provisioner how to
   # communicate with the resource (instance)
   connection {
