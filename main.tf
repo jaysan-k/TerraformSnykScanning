@@ -108,7 +108,8 @@ resource "aws_key_pair" "auth" {
 
 resource "aws_instance" "web" {
   root_block_device {
-    encrypted = true }
+    encrypted = true 
+    }
   #resource > aws_instance[web] > root_block_device > encrypted
   
   # The connection block tells our provisioner how to
